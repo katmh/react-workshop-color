@@ -9,9 +9,11 @@ function App() {
   }
   return (
     <div className="App">
-      <button onClick={toggle}>
-        {isEnabled ? 'Disable' : 'Enable'}
-      </button>
+      <div className="button_container">
+        <button onClick={toggle}>
+          {isEnabled ? 'Disable' : 'Enable'}
+        </button>
+      </div>
       <Box enabled={isEnabled} />
     </div>
   );
